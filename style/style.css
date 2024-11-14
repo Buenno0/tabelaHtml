@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #ff6b81, #2e2c88); /* Gradiente vibrante estilo vaporwave */
+    background: linear-gradient(45deg, #ff6b81, #2e2c88); 
     margin: 0;
     padding: 20px;
     color: #e0e0e0;
@@ -14,7 +14,7 @@ center {
 header {
     background-color: #101820;
     padding: 20px;
-    border-bottom: 5px solid #f2aa4c; /* Linha metálica Art Déco */
+    border-bottom: 5px solid #f2aa4c; 
     text-align: center;
 }
 
@@ -26,7 +26,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #f2aa4c; /* Amarelo metálico */
+    color: #f2aa4c; 
     padding: 10px 15px;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00ffcc; /* Neon verde-água */
+    color: #00ffcc;
     border-bottom: 3px solid #00ffcc;
 }
 
@@ -46,11 +46,11 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     margin: 20px 0;
-    letter-spacing: 5px; /* Estilo brutalista, espaçamento exagerado */
-    text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff66cc; /* Sombra neon */
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff66cc; 
 }
 
-/* Adicionando efeito de animação neon para o título */
+
 @keyframes neonGlow {
     0% {
         text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc, 0 0 40px #ff66cc, 0 0 50px #ff66cc;
@@ -72,17 +72,17 @@ h1 {
 }
 
 .gallery-item {
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo com opacidade para um efeito moderno */
+    background-color: rgba(0, 0, 0, 0.7); 
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9); /* Sombra com contraste forte */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .gallery-item:hover {
-    transform: scale(1.05); /* Efeito de hover futurista */
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.8); /* Efeito neon no hover */
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.8); 
 }
 
 .gallery-item img {
@@ -93,7 +93,7 @@ h1 {
 }
 
 .gallery-item img:hover {
-    filter: brightness(1.2); /* Efeito de brilho nas imagens ao passar o mouse */
+    filter: brightness(1.2); 
 }
 
 .gallery-item h2 {
@@ -102,9 +102,9 @@ h1 {
     margin: 0;
     color: #e0e0e0;
     background-color: #101820;
-    border-top: 3px solid #f2aa4c; /* Linha Art Déco */
+    border-top: 3px solid #f2aa4c;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
-    text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc; /* Efeito de sombra neon nas legendas */
+    text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc; 
 }
