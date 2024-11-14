@@ -7,29 +7,33 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #101820; /* Fundo escuro para um efeito futurista */
+            background: linear-gradient(45deg, #ff6b81, #2e2c88); 
             margin: 0;
             padding: 20px;
             color: #e0e0e0;
         }
+
         center {
             max-width: 1200px;
             margin: auto;
         }
+
         header {
             background-color: #101820;
             padding: 20px;
-            border-bottom: 5px solid #f2aa4c; /* Linha metálica Art Déco */
+            border-bottom: 5px solid #f2aa4c;
             text-align: center;
         }
+
         nav {
             display: flex;
             justify-content: space-around;
             padding: 10px 0;
         }
+
         nav a {
             text-decoration: none;
-            color: #f2aa4c; /* Amarelo metálico */
+            color: #f2aa4c;
             padding: 10px 15px;
             font-size: 1.2em;
             text-transform: uppercase;
@@ -37,47 +41,78 @@
             transition: color 0.3s, border-bottom 0.3s;
             border-bottom: 3px solid transparent;
         }
+
         nav a:hover {
-            color: #00ffcc; /* Cor neon para retro-futurismo */
+            color: #00ffcc; 
             border-bottom: 3px solid #00ffcc;
         }
+
         h1 {
             font-size: 3em;
             color: #f2aa4c;
             text-align: center;
             text-transform: uppercase;
             margin: 20px 0;
-            letter-spacing: 5px; /* Estilo brutalista, espaçamento exagerado */
+            letter-spacing: 5px; 
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff66cc;
         }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             margin: 20px 0;
         }
+
         .gallery-item {
-            background-color: #282828;
+            background-color: rgba(0, 0, 0, 0.7);
             border-radius: 5px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); /* Sombra brutalista */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9); 
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .gallery-item:hover {
-            transform: scale(1.05); /* Efeito de hover futurista */
+            transform: scale(1.05); 
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.8); 
         }
+
         .gallery-item img {
             width: 100%;
             height: auto;
             display: block;
+            transition: filter 0.3s ease;
         }
+
+        .gallery-item img:hover {
+            filter: brightness(1.2); 
+        }
+
         .gallery-item h2 {
             padding: 15px;
             font-size: 1.7em;
             margin: 0;
             color: #e0e0e0;
             background-color: #101820;
-            border-top: 3px solid #f2aa4c; /* Linha Art Déco */
+            border-top: 3px solid #f2aa4c; 
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc;
+        }
+
+        @keyframes neonGlow {
+            0% {
+                text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc, 0 0 40px #ff66cc, 0 0 50px #ff66cc;
+            }
+            100% {
+                text-shadow: 0 0 20px #ff66cc, 0 0 30px #ff66cc, 0 0 40px #ff66cc, 0 0 50px #ff66cc, 0 0 60px #ff66cc;
+            }
+        }
+
+        h1 {
+            animation: neonGlow 1.5s ease-in-out infinite alternate;
         }
     </style>
 </head>
